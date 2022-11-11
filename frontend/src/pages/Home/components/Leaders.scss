@@ -1,70 +1,69 @@
 .leader__board__container {
-    width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
-    
+  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
 }
 
 .leader__board {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .leader__board img {
-    // padding-top: 100px;
+  // padding-top: 100px;
 }
 
 .A {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .B {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    // border: 7.5px outset gold;
+  }
 
-    .B {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        // border: 7.5px outset gold;
-    }
+  p {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    // background-color: lightblue;
+  }
 
-    p {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        // background-color: lightblue;
-        
-    }
-
-    img {
-        height: 80%;
-        width: 80%;
-        // background-color: lightblue;
-        
-    }
+  img {
+    height: 80%;
+    width: 80%;
+    // background-color: lightblue;
+  }
 }
-
+.top {
+  margin-bottom: 100px;
+}
 .M1 {
-    border: 7.5px outset gold;
-    margin-bottom: 250px;
+  border: 5.5px outset gold;
+  // margin-bottom: 100px;
 }
 
 .M2 {
-    border: 7.5px outset silver;
-    margin-bottom: 100px;
+  border: 5.5px outset silver;
+  // margin-bottom: 50px;
 }
 
 .M3 {
-    border: 7.5px outset rgb(184, 115, 51);
+  border: 5.5px outset rgb(184, 115, 51);
 }
