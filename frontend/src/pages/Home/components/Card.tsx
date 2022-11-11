@@ -11,6 +11,7 @@ const Card: React.FC = () => {
             </div>
             <span className = "streamer__name">RedBread Collaboration</span>
             <span className = "streamer__subscribers">9 subscribers</span>
+            <span className="sum__donates">1 900 000₽</span>
         </div>
     );
 };
