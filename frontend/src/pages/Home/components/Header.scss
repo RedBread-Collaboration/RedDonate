@@ -9,10 +9,11 @@ $header-background: #fcfcfc;
   width: 100%;
   height: $header-height;
 
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // z-index: 1;
+  // top: 0;
+  // left: 0;
+  margin-bottom: $header-height;
 
   display: flex;
   justify-content: center;
@@ -23,6 +24,11 @@ $header-background: #fcfcfc;
 .header {
   height: $header-height;
   width: 100%;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
 
   padding: 0px 16px;
 
