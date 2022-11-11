@@ -1,11 +1,7 @@
 import "./Header.scss";
 
-// import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-// import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
-// import LocationOnIcon from "@mui/icons-material/LocationOn";
-// import CloudOffOutlinedIcon from "@mui/icons-material/CloudOffOutlined";
 import React from "react";
-import Logo from "../assets/5.svg"
+import Logo from "../assets/Logo.svg"
 
 const Header: React.FC = () => {
   // var cloud_icon = <CloudOutlinedIcon className="icon" />;
@@ -14,14 +10,11 @@ const Header: React.FC = () => {
     <div className="header__container">
       <div className="header">
 
-        <img src={Logo} className="Logo_img" alt="" />
-        <div className="search">
-        <form>
-          <input type="text" placeholder="Искать здесь..."/>
-          <button type="submit">ТЫк</button>
-        </form>
-        </div>
-        <p className="LK">Что-то про личный кабинет</p>
+        <img className="header__logo" src={Logo} alt="" />
+
+        <input className="header__search__bar" type="text" placeholder="Искать здесь..."/>
+
+        <p className="header__lk">Что-то про личный кабинет</p>
     
       </div>
     </div>
