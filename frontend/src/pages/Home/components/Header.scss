@@ -35,9 +35,15 @@ $header-background: #fcfcfc;
   height: 32px;
 }
 
+.header__search__bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .header__search__bar input {
-  width: 500px;
+  max-width: 500px;
   height: 42px;
+  width: 100%;
 
   padding: 0px 10px;
 
