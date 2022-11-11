@@ -37,8 +37,14 @@ $header-background: #fcfcfc;
   align-items: center;
 }
 
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__logo img {
-  height: 32px;
+  height: 60px;
 }
 
 .header__lk {
