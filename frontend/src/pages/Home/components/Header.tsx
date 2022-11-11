@@ -1,21 +1,23 @@
 import "./Header.scss";
 
 import React from "react";
-import Logo from "../assets/Logo.svg"
+import Logo from "../assets/Logo.svg";
 
 const Header: React.FC = () => {
-  // var cloud_icon = <CloudOutlinedIcon className="icon" />;
-
   return (
     <div className="header__container">
       <div className="header">
+        <div className="header__logo">
+          <img src={Logo} alt="" />
+        </div>
 
-        <img className="header__logo" src={Logo} alt="" />
+        <div className="header__search__bar">
+          <input type="text" placeholder="Искать здесь..." />
+        </div>
 
-        <input className="header__search__bar" type="text" placeholder="Искать здесь..."/>
-
-        <p className="header__lk">Что-то про личный кабинет</p>
-    
+        <div className="header__lk">
+          <p>Что-то про личный кабинет</p>
+        </div>
       </div>
     </div>
   );
