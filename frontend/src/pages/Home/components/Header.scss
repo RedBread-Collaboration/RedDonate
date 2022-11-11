@@ -35,6 +35,10 @@ $header-background: #fcfcfc;
   height: 32px;
 }
 
+.header__lk {
+  white-space: nowrap;
+}
+
 .header__search__bar {
   width: 100%;
   display: flex;

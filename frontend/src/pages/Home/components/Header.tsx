@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         </div>
 
         <div className="header__lk">
-          <p>Что-то про личный кабинет</p>
+          <span>Что-то про личный кабинет</span>
         </div>
       </div>
     </div>
