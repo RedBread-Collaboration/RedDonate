@@ -2,6 +2,7 @@ import "./Header.scss";
 
 import React from "react";
 import Logo from "../assets/Logo.svg";
+import Magnifying from "../assets/Magnifying.png";
 
 const Header: React.FC = () => {
   return (
@@ -11,8 +12,11 @@ const Header: React.FC = () => {
           <img src={Logo} alt="" />
         </div>
 
+        <div className="header__center">
         <div className="header__search__bar">
-          <input type="text" placeholder="Искать здесь..." />
+          <img src={Magnifying} alt="" />
+          <input type="text" placeholder="Найти стримера" />
+        </div>
         </div>
 
         <div className="header__lk">
