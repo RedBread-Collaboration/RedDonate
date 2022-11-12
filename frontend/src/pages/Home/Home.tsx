@@ -9,24 +9,15 @@ function Home() {
   return (
     <article>
       <Header/>
-      <Leaders/>
-      <span className="Top">Топ стримеров</span>
-      <div className = "Top__container">
-        <div className = "Top__position">
-          <span className = "Top__number third"> 3 </span>
-          <Card />
-        </div>
-        <div className="Top__position">
-          <span className="Top__number first"> 1 </span>
-          <Card />
-        </div>
-        <div className="Top__position">
-          <span className="Top__number second"> 2 </span>
-          <Card />
-        </div>
-      </div>
-      <div className = "Card__container">
-        <Card />
+      <Leaders/> 
+      <div className = "Card__container"> 
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />  
       </div>
     </article>
   );
