@@ -19,12 +19,12 @@ const Card: React.FC = () => {
                 </div>
                 <div className = "flex__column button__container">
                     <div className = "flex__row button button__info">
-                        <img className="icon__info" src={info}></img>
+                        <img className="icon__info" src={info} alt=""></img>
                         <a href="profile">Подробнее</a>
                     </div>
                     <div className = "flex__row button button__donate">
-                        <img className="icon__donate" src={donate}></img>
-                        <a href="donate">Задонатить</a>
+                        <img className="icon__donate" src={donate} alt=""></img>
+                        <a href="profile">Задонатить</a>
                     </div>
                 </div>
             </div>

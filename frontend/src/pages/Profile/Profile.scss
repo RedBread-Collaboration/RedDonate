@@ -93,3 +93,28 @@ border-radius: 16px;
 .profile__money {
     font-size: 56px !important;
 }
+
+.return__arrow {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+    margin-bottom: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+    
+
+    background: #fcfcfc;
+
+    transform: rotate(180deg);
+}
+
+.return__arrow img {
+    border: 2px solid #49454F;
+    border-radius: 50%;
+
+    padding: 10px;
+    
+}
