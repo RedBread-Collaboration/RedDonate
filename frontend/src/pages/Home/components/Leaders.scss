@@ -23,14 +23,14 @@
   // padding-top: 100px;
 }
 
-.A {
+.leader__circles {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
-  .B {
+  .leader__circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
     // background-color: lightblue;
   }
 }
-.top {
+.top__leader {
   margin-bottom: 100px;
 }
 .M1 {

@@ -9,9 +9,10 @@ const Leaders: React.FC = () => {
     <div className="leader__board__container">
       <div className="leader__board">
         <p className="leader__board__title">Наши короли</p>
-        <div className="A">
-          <div className="C">
-            <div className="B M2">
+
+        <div className="leader__circles">
+          <div>
+            <div className="leader__circle M2">
               <img src={L} alt="" />
             </div>
             <span>Его не зовут</span>
@@ -19,8 +20,8 @@ const Leaders: React.FC = () => {
             <span>Что-то типо денег</span>
           </div>
 
-          <div className="C top">
-            <div className="B M1">
+          <div className="top__leader">
+            <div className="leader__circle M1">
               <img src={L} alt="" />
             </div>
             <span>Его не зовут</span>
@@ -28,8 +29,8 @@ const Leaders: React.FC = () => {
             <span>Что-то типо денег</span>
           </div>
 
-          <div className="C">
-            <div className="B M3">
+          <div>
+            <div className="leader__circle M3">
               <img src={L} alt="" />
             </div>
             <span>Его не зовут</span>
