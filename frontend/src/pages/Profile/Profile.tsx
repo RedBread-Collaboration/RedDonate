@@ -1,8 +1,9 @@
 import "./Profile.scss";
 import Header from "./components/Header";
 import LogoStreamer from "./assets/cat.jpg";
-import Piont from "./assets/icon.svg"
-import Arrow from "./assets/arr.svg"
+import Piont from "./assets/icon.svg";
+import Arrow from "./assets/arr.svg";
+
 
 function Profile() {
   return (
@@ -10,7 +11,10 @@ function Profile() {
       <Header />
       <div className="profile__top">
         <img className="profile__avatar" alt="" src={LogoStreamer}></img>
-        <span className="profile__nickname">Ламповая Няша</span>
+        <div className="profile__info">
+            <span className="profile__nickname">Ламповая Няша</span>
+            <span className="paragraph__about">Показываю фокусы и люблю фикусы. В свободное время зажаю картошку. Сплю преимущественно на правом боку.</span>
+        </div>
       </div>
 
       <div className="profile__main__block">
@@ -73,8 +77,6 @@ function Profile() {
                 <span className="profile__money">3945807₽</span>
             </div>
         </div>
-
-
       </div>
     </article>
   );
