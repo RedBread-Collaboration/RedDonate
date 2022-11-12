@@ -33,13 +33,15 @@
     width: 100%;
     // border: 2px solid lightcoral;
     display: flex;
-    gap:50px;
+    // flex-wrap: wrap;
+    gap: 50px;
     align-items: flex-start;
 }
 
 .profile__block {
-    max-width: 33%;
+    max-width: 30%;
     width: 100%;
+    // min-width: 100px;
 
     display: flex;
     flex-direction: column;
