@@ -11,7 +11,8 @@ public class User {
     private String password_hash;
     private String nickname;
     private String desc;
-    private String category;
+    private String category1;
+    private String category2;
     private String avatarUrl;
     private String headerUrl;
     private boolean loggedIn;
@@ -19,12 +20,13 @@ public class User {
     public User() {
     }
 
-    public User(String email, String password_hash, String nickname, String desc, String category, String avatarUrl) {
+    public User(String email, String password_hash, String nickname, String desc, String category1, String category2, String avatarUrl) {
         this.email = email;
         this.password_hash = password_hash;
         this.nickname = nickname;
         this.desc = desc;
-        this.category = category;
+        this.category1 = category1;
+        this.category2 = category2;
         this.avatarUrl = avatarUrl;
         this.loggedIn = false;
     }
@@ -75,13 +77,22 @@ public class User {
         this.desc = desc;
     }
 
-    @Column(name = "\"category\"", nullable = false)
-    public String getCategory() {
-        return category;
+    @Column(name = "\"category1\"", nullable = false)
+    public String getCategory1() {
+        return this.category1;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategory1(String category1) {
+        this.category1 = category1;
+    }
+
+    @Column(name = "\"category2\"", nullable = false)
+    public String getCategory2() {
+        return this.category2;
+    }
+
+    public void setCategory2(String category2) {
+        this.category2 = category2;
     }
 
 

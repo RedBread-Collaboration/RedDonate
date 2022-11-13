@@ -3,21 +3,19 @@ package com.redbread.RedDonate.controllers;
 import com.redbread.RedDonate.models.User;
 import com.redbread.RedDonate.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/users")
 public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping(path = "/getAllUsers", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, path = "/getAllUsers")
     public Iterable<User> getAllUsers() {
         return userRepository.findAll();
     }
@@ -33,26 +31,28 @@ public class UserController {
     }
 
     @RequestMapping(path = "/createUser", method = RequestMethod.POST)
-    public User createUser(@Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl) {
+    public User createUser(@Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category1, @Valid @RequestParam String category2, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl) {
         User user = new User();
         user.setEmail(email);
         user.setPasswordHash(password_hash);
         user.setNickname(nickname);
         user.setDesc(desc);
-        user.setCategory(category);
+        user.setCategory1(category1);
+        user.setCategory2(category2);
         user.setAvatarUrl(avatarUrl);
         user.setHeaderUrl(headerUrl);
         return userRepository.save(user);
     }
 
     @RequestMapping(path = "/updateUser", method = RequestMethod.PUT)
-    public User updateUser(@RequestParam @Valid Long userId, @Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl) {
+    public User updateUser(@RequestParam @Valid Long userId, @Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category1, @Valid @RequestParam String category2, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl) {
         User user = getUserById(userId);
         user.setEmail(email);
         user.setPasswordHash(password_hash);
         user.setNickname(nickname);
         user.setDesc(desc);
-        user.setCategory(category);
+        user.setCategory1(category1);
+        user.setCategory2(category2);
         user.setAvatarUrl(avatarUrl);
         user.setHeaderUrl(headerUrl);
         final User updatedUser = userRepository.save(user);
