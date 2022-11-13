@@ -76,3 +76,21 @@ $ mvn compile
 ```
 $ java -jar ./target/RedDonate-0.0.1-SNAPSHOT.jar
 ```
+
+# Небольшая пометка!!!!
+
+---
+
+## Так как сейчас у нас авторизация не реализована, Вам, чтобы полностью просмотреть остальную реализацию понадобится добавить несколько пользователей вручную..
+
+## Ссылка для добавления: (метод POST)
+
+```
+http://localhost:8081/users/createUser?email=streamer@mail.ru&password_hash=hjflkjvhjdfkdjihjbelfvdjfhbnklfjdvcixhjkbdfnskljhbjknfkljdsvnkm&nickname=Cool Streamer&desc=Super duper puper description of me&category1=Gaming&category2=Other&avatarUrl&headerUrl&paymentUrl=https://netmonet.co/tip/236471
+```
+
+## Параметры для создания пользователя:
+
+![img.png](img.png)
+
+# _Думаю удобнее всего будет добавлять их через Postman :)_

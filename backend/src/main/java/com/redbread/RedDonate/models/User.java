@@ -16,20 +16,23 @@ public class User {
     private String avatarUrl;
     private String headerUrl;
     private boolean loggedIn;
+    private String paymentUrl;
 
     public User() {
     }
 
-    public User(String email, String password_hash, String nickname, String desc, String category1, String category2, String avatarUrl) {
-        this.email = email;
-        this.password_hash = password_hash;
-        this.nickname = nickname;
-        this.desc = desc;
-        this.category1 = category1;
-        this.category2 = category2;
-        this.avatarUrl = avatarUrl;
-        this.loggedIn = false;
-    }
+//    public User(String email, String password_hash, String nickname, String desc, String category1, String category2, String avatarUrl, String headerUrl, String paymentUrl) {
+//        this.email = email;
+//        this.password_hash = password_hash;
+//        this.nickname = nickname;
+//        this.desc = desc;
+//        this.category1 = category1;
+//        this.category2 = category2;
+//        this.avatarUrl = avatarUrl;
+//        this.headerUrl = headerUrl;
+//        this.loggedIn = false;
+//        this.paymentUrl = paymentUrl;
+//    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -121,6 +124,15 @@ public class User {
 
     public void setLoggedIn(boolean loggedIn) {
         this.loggedIn = loggedIn;
+    }
+
+    @Column(name = "\"paymentUrl\"", nullable = false)
+    public String getPaymentUrl() {
+        return this.paymentUrl;
+    }
+
+    public void setPaymentUrl(String paymentUrl) {
+        this.paymentUrl = paymentUrl;
     }
 
 }
