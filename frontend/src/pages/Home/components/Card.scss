@@ -17,7 +17,7 @@ $text-color: #000000;
 
 .card__container {   
     width: 250px;
-    height: 450px;
+    height: 500px;
     margin: 20px 30px;
     background: $card-background;
     border-radius: 10px; 
@@ -69,6 +69,14 @@ $text-color: #000000;
     font-size: 18px;
     color: rgba(#000, 0.5);
     font-style: italic;
+}
+
+.stream__category {
+    border: 2px solid rgba(#000000, .05);
+    background: rgba(#000, .05);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
 }
 
 .button__container {

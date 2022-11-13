@@ -15,27 +15,27 @@ const Leaders: React.FC = () => {
             <div className="leader__circle M2">
               <img src={L} alt="" />
             </div>
-            <span>Его не зовут</span>
+            <span>Hack</span>
             <br />
-            <span>Что-то типо денег</span>
+            <span>200K</span>
           </div>
 
           <div className="top__leader">
             <div className="leader__circle M1">
               <img src={L} alt="" />
             </div>
-            <span>Его не зовут</span>
+            <span>&</span>
             <br />
-            <span>Что-то типо денег</span>
+            <span>500K</span>
           </div>
 
           <div>
             <div className="leader__circle M3">
               <img src={L} alt="" />
             </div>
-            <span>Его не зовут</span>
+            <span>Change</span>
             <br />
-            <span>Что-то типо денег</span>
+            <span>100K</span>
           </div>
         </div>
       </div>

@@ -17,6 +17,9 @@ const Card: React.FC = () => {
                     <span className = "streamer__name">Kitty</span>
                     <span className="sum__donates">500К ₽</span>
                 </div>
+                <div className = "stream__category">
+                    Видеоигры
+                </div>
                 <div className = "flex__column button__container">
                     <div className = "flex__row button button__info">
                         <img className="icon__info" src={info} alt=""></img>

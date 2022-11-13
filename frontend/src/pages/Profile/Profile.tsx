@@ -25,50 +25,73 @@ function Profile() {
         <div className="profile__info">
           <span className="profile__nickname">Ламповая Няша</span>
           <span className="paragraph__about">
-            Показываю фокусы и люблю фикусы. В свободное время зажаю картошку.
+            Показываю фокусы и люблю фикусы. В свободное время сажаю картошку.
             Сплю преимущественно на правом боку.
+          </span>
+          <span className="stream__category__profile">
+            Видеоигры
           </span>
         </div>
       </div>
 
-      <div className="profile__main__block">
-        <div className="profile__block">
-          <span className="profile__block__title">Топ 3-и донатеров</span>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 1 - 1000 руб.</span>
-          </div>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 2 - 500 руб.</span>
-          </div>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 3 - 100 руб.</span>
-          </div>
+      <div className="profile__container">
+        <div className="profile__block">  
+            <span className="profile__block__title">Топ 3 донатеров</span>
+            <div className="top__donaters_container">
+                <span className="donater__position">Аноним - 5099  руб.</span>
+                <span className="donater__position">ADVOKAT - 4345 руб.</span>
+                <span className="donater__position">КорольJLb - 3815 руб.</span>
+            </div>
         </div>
 
         <div className="profile__block">
           <span className="profile__block__title">История</span>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 1 - 1000 руб.</span>
-          </div>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 2 - 500 руб.</span>
-          </div>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 3 - 100 руб.</span>
-          </div>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 4 - 100 руб.</span>
-          </div>
-          <div className="profile__block__element">
-            <img src={Piont} alt="" />
-            <span>Человек 5 - 100 руб.</span>
+          <div className="all_donates_container">
+            <div className="donate__info__block">
+                <span className="donate__main__info">통역사 - 566 RUB</span>
+                <span className="donate__message">
+                    est aliqua. cupidatat in ipsum quis consequat.
+                    commodo amet, dolore Lorem in sunt ut ea nulla
+                    Ut ex sit aute incididunt
+                </span>
+                <span className="data__time">14:15 12.11.2022</span>
+            </div>
+            <div className="donate__info__block">
+                <span className="donate__main__info">통역사 - 566 RUB</span>
+                <span className="donate__message">
+                    est aliqua. cupidatat in ipsum quis consequat.
+                    commodo amet, dolore Lorem in sunt ut ea nulla
+                    Ut ex sit aute incididunt
+                </span>
+                <span className="data__time">14:15 12.11.2022</span>
+            </div>
+            <div className="donate__info__block">
+                <span className="donate__main__info">통역사 - 566 RUB</span>
+                <span className="donate__message">
+                    est aliqua. cupidatat in ipsum quis consequat.
+                    commodo amet, dolore Lorem in sunt ut ea nulla
+                    Ut ex sit aute incididunt
+                </span>
+                <span className="data__time">14:15 12.11.2022</span>
+            </div>
+            <div className="donate__info__block">
+                <span className="donate__main__info">통역사 - 566 RUB</span>
+                <span className="donate__message">
+                    est aliqua. cupidatat in ipsum quis consequat.
+                    commodo amet, dolore Lorem in sunt ut ea nulla
+                    Ut ex sit aute incididunt
+                </span>
+                <span className="data__time">14:15 12.11.2022</span>
+            </div>
+            <div className="donate__info__block">
+                <span className="donate__main__info">통역사 - 566 RUB</span>
+                <span className="donate__message">
+                    est aliqua. cupidatat in ipsum quis consequat.
+                    commodo amet, dolore Lorem in sunt ut ea nulla
+                    Ut ex sit aute incididunt
+                </span>
+                <span className="data__time">14:15 12.11.2022</span>
+            </div>
           </div>
           <div className="profile__block__element">
             <img src={Arrow} alt="" />
