@@ -3,7 +3,7 @@
 .streamer__card__container {
   display: flex;
   gap: 100px;
-
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -19,7 +19,6 @@
 
   border-radius: 60px 60px 0px 0px;
   //   border: 1px solid lightblue;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +41,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 7px 5px;
+  margin: 20px 0;
 
   align-items: center;
   justify-content: center;
@@ -59,11 +58,11 @@
 
   text-align: center;
 
-  padding: 2px;
+  padding: 0 5px;
 
   font-size: 24px;
 
-  color: rgb(117, 165, 182);
+  color: rgb(109, 105, 158);
 
   font-family: "Maven Pro", sans-serif;
 }
@@ -99,4 +98,8 @@
   // transform: translate(-10px, 00%);
   display: inline-block;
   transition: all 0.5s ease-out;
+}
+
+.streamer__card__sum {
+  font-style: italic;
 }

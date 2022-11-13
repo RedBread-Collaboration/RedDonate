@@ -30,7 +30,7 @@ const StreamerCard: React.FC = () => {
         <div className="streamer__card__nickname">
           <div className="streamer__card__nickname__text">
             <span>Kuplinov ► Play</span>
-            <span>200k.</span>
+            <span className="streamer__card__sum">200k.</span>
           </div>
 
           <svg
@@ -60,7 +60,7 @@ const StreamerCard: React.FC = () => {
         <div className="streamer__card__nickname">
           <div className="streamer__card__nickname__text">
             <span>Kuplinov ► Play</span>
-            <span>100k.</span>
+            <span className="streamer__card__sum">100k.</span>
           </div>
 
           <svg
@@ -90,7 +90,7 @@ const StreamerCard: React.FC = () => {
         <div className="streamer__card__nickname">
           <div className="streamer__card__nickname__text">
             <span>Kuplinov ► Play</span>
-            <span>80k.</span>
+            <span className="streamer__card__sum">80k.</span>
           </div>
 
           <svg
