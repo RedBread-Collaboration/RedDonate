@@ -71,7 +71,7 @@ $ mvn compile
 
 Теперь можно его запускать
 
-## Запуск проекта
+## Запуск бэкенда
 
 ```
 $ java -jar ./target/RedDonate-0.0.1-SNAPSHOT.jar
