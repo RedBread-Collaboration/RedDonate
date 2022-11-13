@@ -14,10 +14,12 @@ interface IStreamerCard {
     category1?: string;
     category2?: string;
     donate?: string;
+    id: number;
 }
 
 
-const StreamerCard: React.FC<IStreamerCard> = ({ crown, nickname, category1, category2, donate }) => {
+const StreamerCard: React.FC<IStreamerCard> = ({ crown, nickname, category1, category2, donate, id }) => {
+  let url = "profile/" + id;
   return (
     // <article className="streamer__card__container">
       <article className="streamer__card">
@@ -35,7 +37,7 @@ const StreamerCard: React.FC<IStreamerCard> = ({ crown, nickname, category1, cat
           {category2 ? <span className="streamer__card__categories_span">{category2}</span> : ""}
         </div>
 
-        <a href="profile" className="streamer__card__nickname">
+        <a href={url} className="streamer__card__nickname">
           <div className="streamer__card__nickname__text">
             <span>{nickname}</span>
             <span className="streamer__card__sum">{donate}</span>

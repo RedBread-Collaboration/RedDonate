@@ -1,10 +1,10 @@
 import "./Streamers.scss";
 
-import React, { Key, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import StreamerCard from "./StreamerCard";
 
 interface IStreamer {
-  id: Key,
+  id: number,
   nickname: string,
   desc: string,
   category1: string,
@@ -36,7 +36,7 @@ const Streamers: React.FC = () => {
       setStreamers(streamers);
       // Streamers = streamers;
     });
-  }, STREAMERS);
+  }, [STREAMERS]);
   // console.log(streamers);
 
   return (
@@ -53,6 +53,7 @@ const Streamers: React.FC = () => {
             nickname={streamer.nickname}
             category1={streamer.category1}
             category2={streamer.category2}
+            id={streamer.id}
           />
       )}
     </article>
