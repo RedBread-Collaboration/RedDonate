@@ -34,7 +34,7 @@ const StreamerCard: React.FC<IStreamerCard> = ({ crown }) => {
         <a href="profile" className="streamer__card__nickname">
           <div className="streamer__card__nickname__text">
             <span>Kuplinov ► Play</span>
-            <span>200k.</span>
+            <span className="streamer__card__sum">200k.</span>
           </div>
 
           <svg
