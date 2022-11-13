@@ -5,9 +5,13 @@ import { useNavigate } from "react-router-dom";
 import StreamerProfile from "./components/StreamerProfile";
 import Statistic from "./components/Statistic";
 import HistoryDonates from "./components/HistoryDonates";
+import { useParams } from 'react-router-dom';
 
 function Profile() {
   let navigate = useNavigate();
+  let { id } = useParams();
+
+  console.log(id);
 
   return (
     <article className="Profile__page">
