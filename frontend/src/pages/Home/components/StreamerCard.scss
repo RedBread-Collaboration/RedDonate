@@ -1,34 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
 
 .streamer__card__container {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
 
-    justify-content: center;    
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    // margin: 50px 150px;
-    padding: 0px 20px;
+  // margin: 50px 150px;
+  padding: 0px 20px;
 }
 
 .streamer__card {
   width: 300px;
-//   height: 450px;
+  //   height: 450px;
 
-// margin-left: 100px;
+  // margin-left: 100px;
 
   border-radius: 60px 60px 0px 0px;
-//   border: 1px solid lightblue;
+  //   border: 1px solid lightblue;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  
 }
 
 .streamer__card__crown img {
-    width: 150px;
+  width: 150px;
 }
 
 .streamer__card__background img {
@@ -41,43 +39,64 @@
 }
 
 .streamer__card__categories {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    padding: 7px 5px;
+  padding: 7px 5px;
 
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 .streamer__card__categories_span {
-    border: 2px solid rgba(#000000, .05);
+  border: 2px solid rgba(#000000, 0.05);
 
-    background: rgba(#000, .05);
+  background: rgba(#000, 0.05);
 
-    border-radius: 20px;
-    width: 100%;
+  border-radius: 20px;
+  width: 100%;
 
+  text-align: center;
 
-    text-align: center;
+  padding: 2px;
 
-    padding: 2px;
+  font-size: 24px;
 
+  color: rgb(117, 165, 182);
 
-    font-size: 24px;
-
-    color: rgb(117, 165, 182);
-
-    font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .streamer__card__nickname {
-    margin: 0px 0px;
-    font-size: 32px;
+  margin: 0px 0px;
+  font-size: 32px;
 
-    color: rgb(117, 165, 182);
+  color: rgb(117, 165, 182);
 
-    font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
+
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  gap: 6px;
+}
+
+.streamer__card__nickname__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.streamer__card__nickname__text:hover + .streamer__card__nickname__arrow {
+  width: 24px;
+}
+
+.streamer__card__nickname__arrow {
+  width: 0px;
+  fill: rgb(117, 165, 182);
+  // transform: translate(-10px, 00%);
+  display: inline-block;
+  transition: all 0.5s ease-out;
 }
