@@ -9,17 +9,16 @@ import Background from "../assets/Back.jpg";
 
 
 interface IStreamerCard {
-    crown?: string;
-    nickname: string;
-    category1?: string;
-    category2?: string;
-    donate?: string;
-    id: number;
+    id: number | undefined;
+    crown?: string | undefined;
+    nickname: string | undefined;
+    category1?: string | undefined;
+    category2?: string | undefined;
+    donate?: string | undefined;
 }
 
 
-const StreamerCard: React.FC<IStreamerCard> = ({ crown, nickname, category1, category2, donate, id }) => {
-  let url = "profile/" + id;
+const StreamerCard: React.FC<IStreamerCard> = ({ id, crown, nickname, category1, category2, donate }) => {
   return (
     // <article className="streamer__card__container">
       <article className="streamer__card">
@@ -37,7 +36,7 @@ const StreamerCard: React.FC<IStreamerCard> = ({ crown, nickname, category1, cat
           {category2 ? <span className="streamer__card__categories_span">{category2}</span> : ""}
         </div>
 
-        <a href={url} className="streamer__card__nickname">
+        <a href={"profile/" + id} className="streamer__card__nickname">
           <div className="streamer__card__nickname__text">
             <span>{nickname}</span>
             <span className="streamer__card__sum">{donate}</span>

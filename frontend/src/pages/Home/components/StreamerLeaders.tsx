@@ -12,9 +12,9 @@ const StreamerLeaders: React.FC = () => {
     return (
         <article className="streamer__leaders__container">
 
-            <StreamerCard crown={Crown1} nickname="Kuplinov ► Play" category1="Хорроры" category2="Отдых"  donate="200k."/>
-            <StreamerCard crown={Crown2} nickname="Kuplinov ► Play" category1="Хорроры" donate="100k."/>
-            <StreamerCard crown={Crown3} nickname="Kuplinov ► Play" category1="Отдых" donate="50k."/>
+            <StreamerCard id={1} crown={Crown1} nickname="Kuplinov ► Play" category1="Хорроры" category2="Отдых"  donate="200k."/>
+            <StreamerCard id={1} crown={Crown2} nickname="Kuplinov ► Play" category1="Хорроры" donate="100k."/>
+            <StreamerCard id={1} crown={Crown3} nickname="Kuplinov ► Play" category1="Отдых" donate="50k."/>
 
         </article>
     );

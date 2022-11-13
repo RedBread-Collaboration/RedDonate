@@ -30,13 +30,12 @@ const Streamers: React.FC = () => {
   //     });
   // }
 
-  ;
   useEffect(() => {
     fetchStreamers().then(streamers => {
       setStreamers(streamers);
       // Streamers = streamers;
     });
-  }, [STREAMERS]);
+  }, STREAMERS);
   // console.log(streamers);
 
   return (
@@ -50,10 +49,10 @@ const Streamers: React.FC = () => {
         (streamer: IStreamer) =>
           <StreamerCard
             key={streamer.id}
+            id={streamer.id}
             nickname={streamer.nickname}
             category1={streamer.category1}
             category2={streamer.category2}
-            id={streamer.id}
           />
       )}
     </article>

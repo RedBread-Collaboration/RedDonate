@@ -6,12 +6,38 @@ import StreamerProfile from "./components/StreamerProfile";
 import Statistic from "./components/Statistic";
 import HistoryDonates from "./components/HistoryDonates";
 import { useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
+
+const IStreamer = {
+  id: undefined,
+  nickname: undefined,
+  category1: undefined,
+  category2: undefined,
+  donate: undefined,
+  paymentUrl: undefined,
+}
 
 function Profile() {
+  let [STREAMER, setStreamer] = useState(IStreamer);
+
   let navigate = useNavigate();
   let { id } = useParams();
 
   console.log(id);
+
+  async function fetchStreamer() {
+    return fetch("http://localhost:8081/users/getUserById?userId=" + id)
+      .then(response => {
+        if (response.ok) return response.json();
+      });
+  }
+
+  useEffect(() => {
+    fetchStreamer().then(streamer => {
+      setStreamer(streamer);
+      // Streamers = streamers;
+    });
+  }, [STREAMER]);
 
   return (
     <article className="Profile__page">
@@ -26,10 +52,16 @@ function Profile() {
         />
       </div>
       <div className="profile__container">
-          <StreamerProfile/>
+          <StreamerProfile
+            id={STREAMER.id}
+            nickname={STREAMER.nickname}
+            category1={STREAMER.category1}
+            category2={STREAMER.category2}
+            donate=""
+            paymentUrl={STREAMER.paymentUrl} />
           <div className="extra__block"></div>
-          <Statistic/>
-          <HistoryDonates/>
+          <Statistic />
+          <HistoryDonates />
       </div>
       
       {/* <div className="profile__top">
