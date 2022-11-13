@@ -19,7 +19,9 @@ const StreamerProfile: React.FC = () => {
                 </div>
                 <div className="button donate">
                     <img src={donate_icon}></img>
-                    <span>Задонатить</span>
+                    <a href="https://netmonet.co/tip/236471">
+                        <span>Задонатить</span>
+                    </a>
                 </div>
             </div>
             <div className="Social__Networks">
