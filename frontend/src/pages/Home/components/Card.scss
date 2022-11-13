@@ -1,0 +1,132 @@
+$card-background: #fff;
+$card-bg-active: #ff3e30;
+$avatar-background: #ffff;
+$text-color: #000000;
+
+.flex__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__container {   
+    width: 250px;
+    height: 500px;
+    margin: 20px 30px;
+    background: $card-background;
+    border-radius: 10px; 
+    color: $text-color; 
+    padding: 0;
+    outline: 0.8px solid rgba(#000, 0.2);  
+    font-family: Roboto;
+    transition: all 500ms ease-in-out;
+}
+
+.card__container:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgb(196, 195, 195);
+}
+
+
+.avatar__container { 
+    width: 100%;
+    height: 250px;
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    // border: 1px solid black;
+}
+
+.streamer__info {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+
+}
+
+.name__donate {
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+    // border: 2px solid grey;
+}
+
+.streamer__name {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sum__donates {
+    font-size: 18px;
+    color: rgba(#000, 0.5);
+    font-style: italic;
+}
+
+.stream__category {
+    border: 2px solid rgba(#000000, .05);
+    background: rgba(#000, .05);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.button__container {
+    width: 100%;
+    height: 80px;
+    // border: 2px solid black;
+    justify-content: space-between;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 700;
+    width: 90%;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 800ms ease;
+}
+
+.button__info {
+    border: 2px solid #ff3e30;
+    background-color: #ff3e30;
+    color: #fff;
+}
+
+.button__info:hover {
+    background: #cf3227;
+    box-shadow: #cf3227;
+    cursor: pointer;;
+}
+
+.icon__info {
+    margin-right: 5px;
+}
+
+.button__donate {
+    border: 2px solid rgba(#ff3e30, .05);
+    background-color:rgba(#ff3e30, .04);
+    color: #ff3e30;
+}
+
+.button__donate:hover {
+    background: rgba(#ff3e30, .15);
+    box-shadow: rgba(#ff3e30, .2);
+    cursor: pointer;
+    ;
+}
+
+.icon__donate {
+    margin-right: 5px;
+}
+
+
