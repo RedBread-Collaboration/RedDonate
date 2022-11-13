@@ -1,15 +1,16 @@
 import "./Profile.scss";
 import Header from "./components/Header";
-import LogoStreamer from "./assets/cat.jpg";
-import Piont from "./assets/icon.svg";
 import Arrow from "./assets/arr.svg";
 import { useNavigate } from "react-router-dom";
+import StreamerProfile from "./components/StreamerProfile";
+import Statistic from "./components/Statistic";
+import HistoryDonates from "./components/HistoryDonates";
 
 function Profile() {
   let navigate = useNavigate();
 
   return (
-    <article>
+    <article className="Profile__page">
       <Header />
       <div className="return__arrow">
         <img
@@ -20,7 +21,14 @@ function Profile() {
           }}
         />
       </div>
-      <div className="profile__top">
+      <div className="profile__container">
+          <StreamerProfile/>
+          <div className="extra__block"></div>
+          <Statistic/>
+          <HistoryDonates/>
+      </div>
+      
+      {/* <div className="profile__top">
         <img className="profile__avatar" alt="" src={LogoStreamer}></img>
         <div className="profile__info">
           <span className="profile__nickname">Ламповая Няша</span>
@@ -113,7 +121,7 @@ function Profile() {
             <span className="profile__money">3945807₽</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </article>
   );
 }
