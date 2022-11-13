@@ -31,7 +31,7 @@ public class UserController {
     }
 
     @RequestMapping(path = "/createUser", method = RequestMethod.POST)
-    public User createUser(@Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category1, @Valid @RequestParam String category2, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl) {
+    public User createUser(@Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category1, @Valid @RequestParam String category2, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl, @Valid @RequestParam String paymentUrl) {
         User user = new User();
         user.setEmail(email);
         user.setPasswordHash(password_hash);
@@ -41,11 +41,12 @@ public class UserController {
         user.setCategory2(category2);
         user.setAvatarUrl(avatarUrl);
         user.setHeaderUrl(headerUrl);
+        user.setPaymentUrl(paymentUrl);
         return userRepository.save(user);
     }
 
     @RequestMapping(path = "/updateUser", method = RequestMethod.PUT)
-    public User updateUser(@RequestParam @Valid Long userId, @Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category1, @Valid @RequestParam String category2, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl) {
+    public User updateUser(@RequestParam @Valid Long userId, @Valid @RequestParam String email, @Valid @RequestParam String password_hash, @Valid @RequestParam String nickname, @Valid @RequestParam String desc, @Valid @RequestParam String category1, @Valid @RequestParam String category2, @Valid @RequestParam String avatarUrl, @Valid @RequestParam String headerUrl, @Valid @RequestParam String paymentUrl) {
         User user = getUserById(userId);
         user.setEmail(email);
         user.setPasswordHash(password_hash);
@@ -55,6 +56,7 @@ public class UserController {
         user.setCategory2(category2);
         user.setAvatarUrl(avatarUrl);
         user.setHeaderUrl(headerUrl);
+        user.setPaymentUrl(paymentUrl);
         final User updatedUser = userRepository.save(user);
         return updatedUser;
     }
